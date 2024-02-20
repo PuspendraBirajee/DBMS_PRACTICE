@@ -1,0 +1,16 @@
+1. find the name and ages of all sailor1
+select s.sname, s.sage from sailor1 s;
+
+2. select * from sailor1 where rating>7;
+
+3. select s.sname from sailor1 s, reserves r where s.sid=r.sid and r.bid=103;
+
+4. select b.bcolor from sailor1 s, boats b,reserves r where s.sid=r.sid and b.bid=r.bid and sname='Lubber';
+
+5. select s.sid from sailor1 s,reserves r, boats b where s.sid=r.sid and r.bid=b.bid and b.bcolor='Red';
+
+
+6. select s.sname from sailor1 s,reserves r, boats b where s.sid=r.sid and r.bid=b.bid and b.bcolor='Red';
+
+7. select s.sage from sailor1 s where s.sname like 'b_%b';
+   SELECT S.SAGE FROM SAILOR1 S WHERE S.SNAME LIKE 'B_%B';
